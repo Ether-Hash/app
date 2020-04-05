@@ -86,9 +86,9 @@ function err(){
   document.getElementById("NoProvider").style.marginTop=maxheight/2-200+"px";
 
 }
-// if(typeof ethereum=="undefined"){
-//   err()
-// }
+if(typeof ethereum=="undefined"){
+  err()
+}
 
 function setsignal(){
   web3.eth.net.getId().then(netId => {
